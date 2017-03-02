@@ -10,7 +10,7 @@ var nodeConfig = {
     filename: 'node.bundle.js',
     libraryTarget: 'commonjs2'
   },
-  externals: [nodeExternals()],
+  externals: [nodeExternals(), 'botpress'],
   target: 'node',
   resolve: {
     extensions: ['', '.js']
@@ -22,7 +22,7 @@ var nodeConfig = {
       exclude: /node_modules/,
       query: {
         presets: ['latest', 'stage-0'],
-        plugins: ['transform-object-rest-spread']
+        plugins: ['transform-object-rest-spread', 'transform-async-to-generator']
       }
     }, {
       test: /\.json$/,
@@ -45,8 +45,8 @@ var webConfig = {
     extensions: ['', '.js', '.jsx']
   },
   externals: {
-    'react': 'react',
-    'react-dom': 'reactDOM'
+    'react': 'React',
+    'react-dom': 'ReactDOM'
   },
   module: {
     loaders: [{

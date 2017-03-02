@@ -20,19 +20,19 @@ class MiddlewareComponent extends Component {
   render() {
 
     const { name, enabled, module, description } = this.props.middleware
-    const className = classnames(this.props.className, style.middleware, enabled ? style.enabled : style.disabled)
+    const className = classnames(this.props.className, style.middleware, enabled ? style.enabled : style.disabled, 'bp-middleware')
     const tooltip = description ? <Tooltip id={`module-${name}-description`}>{description}</Tooltip> : null
 
     return (
       <div>
         <div className={className} onClick={this.props.toggleEnabled}>
-          <div className={style.helpIcon}>
+          <div className={classnames(style.helpIcon, 'bp-help-icon')}>
             <OverlayTrigger placement="left" overlay={tooltip}>
               <i className="material-icons">help</i>
             </OverlayTrigger>
           </div>
           <div>
-            <span className={style.circle}></span>
+            <span className={classnames(style.circle, 'bp-circle')}></span>
             <h4>{module}</h4>
           </div>
           <div>Handler: <b>{name || 'N/A'}</b></div>
@@ -208,7 +208,7 @@ export default class MiddlewaresComponent extends Component {
     Usually, messages are put (sent) into the incoming middleware queue&nbsp;
     by <strong>connector modules</strong> such as Facebook Messenger, Slack...</Tooltip>
 
-    const title = 'Incoming middlewares'
+    const title = 'Incoming middleware'
 
     return this.renderList('incoming', title, tooltip)
   }
@@ -220,15 +220,15 @@ export default class MiddlewaresComponent extends Component {
     <strong>Connector modules</strong> are in charge of sending the messages to the users, thus they should&nbsp;
     usually be placed at the end of the chain.</Tooltip>
 
-    const title = 'Outgoing middlewares'
+    const title = 'Outgoing middleware'
 
     return this.renderList('outgoing', title, tooltip)
   }
 
   renderList(type, title, tooltip) {
-    return <ListGroup className={style.middlewareList}>
+    return <ListGroup className={classnames(style.middlewareList, 'bp-middleware-list')}>
       <ListGroupItem>
-        <div className={style.header}>
+        <div className={classnames(style.header, 'bp-header')}>
           {this.renderIsDirty()}
           <h4>{title}</h4>
           <OverlayTrigger placement="right" overlay={tooltip}>

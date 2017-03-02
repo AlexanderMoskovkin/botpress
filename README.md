@@ -10,6 +10,10 @@ Botpress is an open-source bot creation tool written in Javascript. It is powere
 
 Important: **Make sure to join the official Slack Community (https://slack.botpress.io)!**
 
+### Looking to migrate from 0.0 to 0.1 ?
+
+https://gist.github.com/slvnperron/9a3027f4d798c7d6b6b6a9b9b6bdfa7b
+
 ## Vision & Mission
 
 Botpress is on mission to make bots ubiquitous and profitable for everybody. At Botpress, we think that using closed-source tools like Chatfuel is not the right approach for building awesome and powerful bots, but Chatfuel is great for quickly creating straight-forward conversational bots. To be able to create something great, it's important to have full control of your tools and to leverage the community efforts as much as possible.
@@ -137,7 +141,8 @@ Here are a some modules that we think would be useful along with their assigned 
 | **[botpress-analytics](https://github.com/botpress/botpress-analytics)** | [@danyfs](https://github.com/danyfs)
 | **[botpress-rivescript](https://github.com/botpress/botpress-rivescript)** | [@danyfs](https://github.com/danyfs)
 | **[botpress-messenger](https://github.com/botpress/botpress-messenger)** | [@slvnperron](https://github.com/slvnperron)
-| **[botpress-slack](https://github.com/botpress/botpress-slack)** | [@rayshih](https://github.com/rayshih)
+| **[botpress-slack](https://github.com/botpress/botpress-slack)** | [@danyfs](https://github.com/danyfs)
+| **[botpress-discord](https://github.com/TheFreakLord/botpress-discord)** | [@TheFreakLord](https://github.com/TheFreakLord)
 | **[botpress-dialog](https://github.com/dialoganalytics/botpress-dialog)** | [@phildionne](https://github.com/phildionne)
 | **[botpress-scheduler](https://github.com/botpress/botpress-scheduler)** | [@slvnperron](https://github.com/slvnperron)
 | **[botpress-hitl](https://github.com/botpress/botpress-hitl)** | [@danyfs](https://github.com/danyfs)
@@ -174,6 +179,10 @@ There's a [Slack community](https://slack.botpress.io) where you are welcome to 
 
 Get an invite and join us now! 👉[https://slack.botpress.io](https://slack.botpress.io)
 
+## Pricing
+
+Botpress is licensed under an open source and commercial license. Even though it can be freely used and distributed under an open source license, this does not mean that there are no restrictions on its use.  **The main restriction is that any code that uses the botpress code under the  open source license must be open source itself.** For this reason commercial bots would normally be built using botpress licensed under the commercial license because commercial enterprises would want to use their own proprietary code with botpress and don't want to be forced to make this code open source. The commercial license has a cost for enterprises. Please visit our <a href="https://botpress.io/faq">FAQS</a> for more information.
+
 ## License
 
 Botpress is dual-licensed under [AGPLv3](/licenses/LICENSE_AGPL3) and the [Botpress Proprietary License](/licenses/LICENSE_BOTPRESS).
@@ -181,3 +190,7 @@ Botpress is dual-licensed under [AGPLv3](/licenses/LICENSE_AGPL3) and the [Botpr
 By default, any bot created with Botpress is licensed under AGPLv3, but you may change to the Botpress License from within your bot's web interface in a few clicks.
 
 For more information about how the dual-license works and why it works that way please see the <a href="https://botpress.io/faq">FAQS</a>.
+
+## Credits
+
+Emoji provided free by [EmojiOne](http://emojione.com)
